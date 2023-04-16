@@ -7,11 +7,45 @@
 body {
     background-color: #FAFAFA;
     font-family: Montserrat;
+	margin: 0;
+	padding: 0;
 }
 
-@media screen and (min-width: 500px) {
+/* úprava textu*/
+.text,
+.h1,
+.h2 {
+	text-align: center;
+	
+}
 
-	/* Img velikosti mobil*/
+.h1 {
+	font-size: 28px;
+    margin-bottom: 10px;
+} 
+
+.h2 {
+	font-size: 16px;
+    padding-top: 60px;
+}
+
+p {
+    max-width: 460px;
+    font-size: 16px;
+    color: #8B8B8B;
+	box-shadow: #407BFF1F 0px 4px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.boxtext {
+	font-size: 13px;
+}
+
+
+@media screen and (min-width: 50px) {
+
+	/* Img velikosti*/
 .imgHT {
 	width: 300px;
 	height: 291px;
@@ -37,33 +71,11 @@ body {
 	height: 40px;
 }
 
-/* úprava textu*/
-.text,
-.h1,
-.h2 {
-	text-align: center;
-}
-
-.h1 {
-	font-size: 28px;
-    margin-bottom: 10px;
-} 
-
-.h2 {
-	font-size: 16px;
-    margin-top: 60px;
-}
-
-p {
-    max-width: 460px;
-	max-height: 64px;
-    font-size: 16px;
-    color: #8B8B8B;
-	box-shadow: #407BFF1F 0px 4px;
-    margin: 0 auto;
+hr {
+    border: 1px solid #407BFF;
+    width: 60px;
     margin-bottom: 30px;
 }
-
 
 /* marginy a paddingy*/
 .boxSluzby {
@@ -71,38 +83,35 @@ p {
 }
 
 .dobrodruzstvi {
-		display: table;
-		background-color: #407BFF;
-		max-width: 195px;
-		max-height: 40px;
-		padding: 11px 30px;
-		border-radius: 50px;
-		color: white;
-		text-decoration-line: none;
-		text-align: center; 
-		margin-left: auto;
-		margin-right:auto;
-	}
+	display: table;
+	background-color: #407BFF;
+	padding: 11px 30px;
+	border-radius: 50px;
+	color: white;
+	font-size: 14px;
+	text-align: center; 
+	margin: 0 auto;
+}
 
-	.plaz {
-		display: table;
-		background-color: grey;
-		padding: 11px 30px;
-		border-radius: 20px;
-		color: white;
-		text-decoration-line: none;
-		text-align: center; 
-		margin-top: 10px;
-		margin-left: auto;
-		margin-right:auto;
-	  }
+.plaz {
+	display: table;
+	background-color: grey;
+	padding: 11px 30px;
+	border-radius: 50px;
+	color: white;
+	font-size: 14px;
+	text-align: center; 
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right:auto;
+}
 
 
 }
-/* Konec @media screen and (min-width: 500px)*/
+/* Konec @media screen and (min-width: 50px)*/
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 640px) {
 	/* Img velikosti tablet*/
 
 	.boxSluzby {display: flex;}
@@ -138,8 +147,87 @@ p {
 
 
 }
-/* Konec @media screen and (min-width: 768px)*/
+/* Konec @media screen and (min-width: 640px)*/
+
+@media screen and (min-width: 1100px) { 
+    
+    .Uvod,
+	.SluzbyCK,
+	.SluzbyDelegat {
+        max-width: 1040px;
+        display: flex;
+        margin: 0 auto;
+        margin-bottom: 80px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .Uvod,
+    .SluzbyCK {
+        flex-direction: row-reverse;
+    }
+
+    h1,
+    h2,
+    hr,
+    p,
+    .hlavicka {
+        text-align: left;
+    }
+
+    hr {
+        margin-left: 0;
+    }
+
+    .dobrodruzstvi {
+        margin-right: 20px;
+    }
+
+    h2 {
+        margin-top: 0;
+    }
+
+    .sluzby {
+        max-width: 550px;
+    }
+/* ZKouška funkcí 
+    .cestovka,
+    .namiste {
+        max-width: 430px;
+    }
+
+    .box {
+        margin-left: 0;
+        margin-right: 20px;
+    }
+
+    .posledni {
+        margin-right: 0;
+    }
+
+    .uvodnifoto,
+    .hlavicka {
+        width: 490px;
+    }
+
+    .hlavicka {
+        margin-left: 0;
+        margin-right: auto;
+    }
+
+    .uvodnifoto {
+        margin: 60px 0 0 auto;
+    }
+
+    .uvodnifoto img {
+        max-width: 425px;
+        text-align: center;
+    }
+
+    .treti {
+        margin-bottom: 60px;
+    }
 
 
-
-
+*/
+}
