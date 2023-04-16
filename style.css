@@ -11,143 +11,189 @@ body {
 	padding: 0;
 }
 
-/* úprava textu*/
-.text,
-.h1,
-.h2 {
-	text-align: center;
-	
+hr {
+    border: 1px solid #407BFF;
+    width: 60px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .h1 {
-	font-size: 28px;
+    font-size: 28px;
+    text-align: center;
     margin-bottom: 10px;
-} 
+}
 
 .h2 {
-	font-size: 16px;
-    padding-top: 60px;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 60px;
 }
 
 p {
     max-width: 460px;
     font-size: 16px;
     color: #8B8B8B;
-	box-shadow: #407BFF1F 0px 4px;
+    text-align: center;
     margin: 0 auto;
     margin-bottom: 30px;
 }
 
-.boxtext {
-	font-size: 13px;
+.screenPC {
+    text-align: center;
+    margin: auto;
 }
 
-
-@media screen and (min-width: 50px) {
-
-	/* Img velikosti*/
-.imgHT {
-	width: 300px;
-	height: 291px;
-	margin: 60px 75px;
-	padding: 0;
-}
-
-.imgmap,
-.imgplane {
-	width: 45px;
-	height: 40px;
-}
-
-.imgcactus { 
-	width: 40px;
-	height: 40px;
-}
-
-.imgpalm,
-.imgumbrella,
-.imgrv {
-	width: 50px;
-	height: 40px;
-}
-
-hr {
-    border: 1px solid #407BFF;
-    width: 60px;
-    margin-bottom: 30px;
-}
-
-/* marginy a paddingy*/
-.boxSluzby {
-	margin: 30px 20px 57px 20px;
+.dobrodruzstvi,
+.plaz {
+    display: table;
+    color: #FFFFFF;
+    font-size: 14px;
+    padding: 10px 30px;
+    border-radius: 50px;
+    margin: auto;
+    text-align: center;
 }
 
 .dobrodruzstvi {
-	display: table;
-	background-color: #407BFF;
-	padding: 11px 30px;
-	border-radius: 50px;
-	color: white;
-	font-size: 14px;
-	text-align: center; 
-	margin: 0 auto;
+    background-color: #407BFF;
+    border: #407BFF;
+    margin-left: auto;
+    margin-bottom: 10px;
 }
 
 .plaz {
-	display: table;
-	background-color: grey;
-	padding: 11px 30px;
-	border-radius: 50px;
-	color: white;
-	font-size: 14px;
-	text-align: center; 
-	margin-top: 10px;
-	margin-left: auto;
-	margin-right:auto;
+    background-color: #8B8B8B;
+    border: #8B8B8B;
 }
 
-
+.Naplanujeme,
+.Zajistime,
+.Sezeneme,
+.Doporucime,
+.Objedname,
+.Pronajmeme {
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: #407BFF1F 4px 6px 10px;
+    margin: 15px 20px;
+    align-items: center;
 }
-/* Konec @media screen and (min-width: 50px)*/
+
+.boxtext {
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.imgcactus,
+.imgmap,
+.imgpalm,
+.imgplane,
+.imgrv,
+.imgumbrella {
+    margin: 20px;
+}
+
+.imgHT {
+    max-width: 100%;
+    margin: 60px 75px 40px 75px;
+    text-align: center;
+}
+
+.Sezeneme,
+.Pronajmeme {
+    margin-bottom: 60px;
+}
+
+.popisCK,
+.popisD {
+    margin-top: 90px;
+}
+
+.SluzbyCK,
+.SluzbyDelegat {
+    text-align: center;
+}
+
+/* Screen pro tablet*/
 
 
 @media screen and (min-width: 640px) {
-	/* Img velikosti tablet*/
 
-	.boxSluzby {display: flex;}
+.imgHT {
+    margin-bottom: 30px;
+}
 
-	.imgmap,
-	.imgcactus,
-	.imgpalm,
-	.imgplane,
-	.imgrv,
-	.imgumbrella {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
-	
-	.imgHT {
-		width: 400px;
-		height: 332px;
-		margin: 60px 184px;
-		padding: 0;
-	}
-	
-	
-	
-	
-	/* úprava textu*/
-	.text,
-	.h1,
-	.h2 {
-		text-align: center;
-	}
+.dobrodruzstvi,
+.plaz {
+    display: inline;
+}
+
+.h2 {
+    margin-top: 80px;
+}
+
+.text,
+.boxtext {
+    max-width: 550px;
+    margin: auto;
+    margin-bottom: 40px;
+} 
+
+.dobrodruzstvi {
+    margin-right: 20px;
+}
+
+.boxSluzbyCK,
+.boxSluzbyD {
+    display: flex;
+    flex: 1 1 calc(100% / 3);
+    justify-content: space-between;
+}
+
+.Naplanujeme,
+.Zajistime,
+.Sezeneme,
+.Doporucime,
+.Objedname,
+.Pronajmeme {
+    display: block;
+    text-align: center;
+    margin: 0px 10px;
+}
+
+.boxtext {
+    text-align: center;
+    margin: 20px 15px;
+}
+
+.imgcactus,
+.imgmap,
+.imgpalm,
+.imgplane,
+.imgrv,
+.imgumbrella {
+    margin: 40px;
+    margin-bottom: 0px;
+}
+
+.boxSluzbyD {
+    margin-bottom: 80px;
+}
+
+.Sezeneme,
+.Pronajmeme {
+    margin-bottom: 0px ;
+}
 
 
 }
-/* Konec @media screen and (min-width: 640px)*/
+	
+
+/* Screen pro PC*/
 
 @media screen and (min-width: 1100px) { 
     
@@ -168,11 +214,26 @@ hr {
     }
 
     h1,
-    h2,
-    hr,
-    p,
-    .hlavicka {
+    h2 {
         text-align: left;
+    }
+
+    .screenPC {
+        margin-left: 0;
+        margin-right: auto;
+        width: 490px;
+        margin: auto;
+        padding: 0;
+    }
+
+    .boxSluzby {
+        display: flex;
+    flex: 1 1 calc(100% / 3);
+    justify-content: space-evenly;
+    box-sizing: inherit;
+        }
+
+
     }
 
     hr {
@@ -183,51 +244,37 @@ hr {
         margin-right: 20px;
     }
 
-    h2 {
+    .h2 {
         margin-top: 0;
     }
 
-    .sluzby {
+    .boxSluzbyCK,
+    .boxSluzbyD {
         max-width: 550px;
     }
-/* ZKouška funkcí 
-    .cestovka,
-    .namiste {
+
+    .popisCK,
+    .popisD {
         max-width: 430px;
     }
 
-    .box {
+    .Naplanujeme,
+    .Zajistime,
+    .Sezeneme,
+    .Doporucime,
+    .Objedname,
+    .Pronajmeme {
         margin-left: 0;
         margin-right: 20px;
     }
 
-    .posledni {
-        margin-right: 0;
-    }
-
-    .uvodnifoto,
-    .hlavicka {
+    .imgHT {
         width: 490px;
     }
 
-    .hlavicka {
-        margin-left: 0;
-        margin-right: auto;
-    }
-
-    .uvodnifoto {
-        margin: 60px 0 0 auto;
-    }
-
-    .uvodnifoto img {
-        max-width: 425px;
-        text-align: center;
-    }
-
-    .treti {
+    .SluzbyDelegat {
         margin-bottom: 60px;
     }
 
+ 
 
-*/
-}
